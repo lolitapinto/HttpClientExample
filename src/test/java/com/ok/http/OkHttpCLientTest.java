@@ -4,16 +4,11 @@ import com.alibaba.fastjson.JSON;
 import com.ok.http.entity.ModelObj;
 import com.ok.http.util.HttpClient;
 import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootTest
+
 public class OkHttpCLientTest {
 
-
-    @Autowired
-    HttpClient client;
-
+    HttpClient client = new HttpClient();
 
     @Test
     public void sendAndRecieve() throws Exception {
